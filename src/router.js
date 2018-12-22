@@ -5,7 +5,7 @@ import Home from './views/Home.vue';
 Vue.use(Router);
 
 const router = new Router({
-  mode: 'hash', // 可选值: "hash" | "history" | "abstract"
+  mode: 'history', // 可选值: "hash" | "history" | "abstract"
   //   hash: 使用 URL hash 值来作路由。支持所有浏览器，包括不支持 HTML5 History Api 的浏览器。
   // history: 依赖 HTML5 History API 和服务器配置。查看 HTML5 History 模式。
   // abstract: 支持所有 JavaScript 运行环境，如 Node.js 服务器端。如果发现没有浏览器的 API，路由会自动强制进入这个模式
@@ -67,6 +67,14 @@ const router = new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+    },
+    {
+      path: '/counter',
+      name: 'counter',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/Counter.vue'),
     },
   ],
 });
