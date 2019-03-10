@@ -10,6 +10,8 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "node-gyp": "^3.8.0",
+    "todomvc-app-css": "2.1.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"

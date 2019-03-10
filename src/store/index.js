@@ -2,8 +2,13 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import counter from './modules/counter'
 import todomvc from './modules/todomvc'
+import cart from './modules/cart'
+import products from './modules/products'
+import chat from './modules/chat'
+
 // Vuex 是Vue的一个第三方插件，来对Vue 的状态进行管理.
 Vue.use(Vuex);
+Vue.filter('time', timestamp => new Date(timestamp).toLocaleTimeString())
 
 const store = new Vuex.Store({
   state: {
@@ -17,6 +22,9 @@ const store = new Vuex.Store({
   modules: {
     counter, // counter: counter
     todomvc, // todomvc: todomvc
+    products,
+    cart,
+    chat,
   },
 });
 console.log(store.state, 'store/index.js modules state value???')

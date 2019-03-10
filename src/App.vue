@@ -4,7 +4,9 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/counter">Counter</router-link> |
-      <router-link to="/counter">todeMVC</router-link> |
+      <router-link to="/todomvc">todeMVC</router-link> |
+      <router-link to="/shopcart">Shopping Cart</router-link> |
+      <router-link to="/chat">Chat</router-link> |
     </div>
     <!-- <transition> -->
       <router-view/>
@@ -17,7 +19,7 @@
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  // text-align: center;
   color: #2c3e50;
 }
 #nav {

@@ -16,6 +16,7 @@ module.exports = {
     'indent': 0,
     'no-param-reassign': 0,
     'no-plusplus': 0,
+    'arrow-body-style': 0,
   },
   parserOptions: {
     parser: 'babel-eslint',
